@@ -16,7 +16,7 @@ spec:
         "kubernetes.io/os": linux
       containers:
         - name: virtual-customer
-          image: ramymohamed/virtual-customer-l8:latest
+          image: sara21167/virtual-customer-l8:latest
           env:
             - name: ORDER_SERVICE_URL
               value: http://order-service:3000/
@@ -48,7 +48,7 @@ spec:
         "kubernetes.io/os": linux
       containers:
         - name: virtual-worker
-          image: ramymohamed/virtual-worker-l8:latest
+          image: sara21167virtual-worker-l8:latest
           env:
             - name: MAKELINE_SERVICE_URL
               value: http://makeline-service:3001
